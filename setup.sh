@@ -18,6 +18,9 @@ elif [[ -x /usr/local/bin/brew ]]; then
   eval "$(/usr/local/bin/brew shellenv)"
 fi
 
+echo "==> Trusting third-party taps"
+brew trust --tap d12frosted/emacs-plus
+
 echo "==> brew bundle"
 brew bundle --file="$DOTFILES_DIR/Brewfile"
 

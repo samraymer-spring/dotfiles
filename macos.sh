@@ -21,7 +21,7 @@ defaults write NSGlobalDomain KeyRepeat -int 1
 
 echo "==> Screenshots"
 mkdir -p "$HOME/Desktop/Screenshots"
-defaults write com.apple.screencapture location -- "$HOME/Desktop/Screenshots"
+defaults write com.apple.screencapture location "$HOME/Desktop/Screenshots"
 defaults write com.apple.screencapture disable-shadow -bool true
 
 echo "==> Misc"

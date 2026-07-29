@@ -12,6 +12,20 @@ For the original migration plan (moving existing configs into this repo package 
 
 ---
 
+## Bootstrap a new machine
+
+```zsh
+git clone <this-repo> ~/dotfiles
+cd ~/dotfiles && ./setup.sh
+```
+
+Installs Homebrew if missing, runs `brew bundle` against [Brewfile](Brewfile), then
+stows every package directory here. On macOS it also applies system defaults via
+[macos.sh](macos.sh) (Dock, Finder, keyboard, screenshots, misc) — that script can
+also be run standalone: `./macos.sh`.
+
+---
+
 ## Adding a new package later
 
 ```zsh

@@ -116,7 +116,7 @@ This is the most involved package. Your zsh config lives in `~/.config/zsh/` via
 
 `~/.config/git/` will become a directory symlink, so remove the now-empty dir after moving.
 
-- [ ] Move files and stow
+- [x] Move files and stow
 
   ```zsh
   mkdir -p ~/dotfiles/git/.config/git
@@ -128,7 +128,7 @@ This is the most involved package. Your zsh config lives in `~/.config/zsh/` via
   cd ~/dotfiles && stow git
   ```
 
-- [ ] Verify
+- [x] Verify
 
   ```zsh
   ls -la ~/.gitconfig ~/.config/git
@@ -142,7 +142,7 @@ Move the whole directory; stow creates a directory-level symlink for `~/.config/
 `custom.el` is auto-rewritten by Emacs — it's tracked here but will appear modified often.
 If you want to ignore it, add `doom/.config/doom/custom.el` to `~/dotfiles/.gitignore`.
 
-- [ ] Move and stow
+- [x] Move and stow
 
   ```zsh
   mkdir -p ~/dotfiles/doom/.config
@@ -152,7 +152,7 @@ If you want to ignore it, add `doom/.config/doom/custom.el` to `~/dotfiles/.giti
   cd ~/dotfiles && stow doom
   ```
 
-- [ ] Verify
+- [x] Verify
 
   ```zsh
   ls -la ~/.config/doom
@@ -165,7 +165,7 @@ If you want to ignore it, add `doom/.config/doom/custom.el` to `~/dotfiles/.giti
 
 Same pattern as doom. Delete the `.bak` file before committing — it's a one-off snapshot, not config.
 
-- [ ] Move and stow
+- [x] Move and stow
 
   ```zsh
   mkdir -p ~/dotfiles/kitty/.config
@@ -176,7 +176,7 @@ Same pattern as doom. Delete the `.bak` file before committing — it's a one-of
   cd ~/dotfiles && stow kitty
   ```
 
-- [ ] Verify
+- [x] Verify
 
   ```zsh
   ls -la ~/.config/kitty
@@ -189,7 +189,7 @@ Same pattern as doom. Delete the `.bak` file before committing — it's a one-of
 `hosts.yml` contains auth tokens — **do not track it**. Because `~/.config/gh/` still exists
 (with `hosts.yml` inside), stow recurses and creates only a file-level symlink for `config.yml`.
 
-- [ ] Move and stow
+- [x] Move and stow
 
   ```zsh
   mkdir -p ~/dotfiles/gh/.config/gh
@@ -199,7 +199,7 @@ Same pattern as doom. Delete the `.bak` file before committing — it's a one-of
   cd ~/dotfiles && stow gh
   ```
 
-- [ ] Verify
+- [x] Verify
 
   ```zsh
   ls -la ~/.config/gh/config.yml
@@ -210,7 +210,7 @@ Same pattern as doom. Delete the `.bak` file before committing — it's a one-of
 
 ## Step 7 — .gitignore and initial commit
 
-- [ ] Create `~/dotfiles/.gitignore`:
+- [x] Create `~/dotfiles/.gitignore`:
 
   ```gitignore
   # Emacs rewrites this via M-x customize
@@ -220,7 +220,7 @@ Same pattern as doom. Delete the `.bak` file before committing — it's a one-of
   gh/.config/gh/hosts.yml
   ```
 
-- [ ] Commit:
+- [x] Commit:
 
   ```zsh
   cd ~/dotfiles
@@ -242,5 +242,7 @@ machine go from "clone this repo" to "fully configured" with a single command.
 - [x] Create `~/dotfiles/macos.sh` (Dock, Finder, keyboard, screenshots, misc —
       `defaults write` settings, gated to Darwin only in setup.sh)
 - [x] `chmod +x ~/dotfiles/setup.sh ~/dotfiles/macos.sh`
-- [ ] Test on this machine (everything already installed, so `brew bundle` and
-      `stow` should both report no changes / succeed as no-ops)
+- [x] Test on this machine (ran end-to-end: Homebrew present, `brew trust` for
+      the emacs-plus tap, `brew bundle`, `stow` for all packages, `macos.sh`.
+      Fixed one bug found along the way — `defaults write ... -- "$path"` isn't
+      valid syntax for the `defaults` CLI, it treats `--` as a literal arg)

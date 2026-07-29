@@ -18,12 +18,6 @@ elif [[ -x /usr/local/bin/brew ]]; then
   eval "$(/usr/local/bin/brew shellenv)"
 fi
 
-echo "==> Trusting third-party taps"
-brew trust --tap d12frosted/emacs-plus
-
-echo "==> brew bundle"
-brew bundle --file="$DOTFILES_DIR/Brewfile"
-
 echo "==> Stowing packages"
 for pkg_path in "$DOTFILES_DIR"/*/; do
   pkg="$(basename "$pkg_path")"
@@ -31,6 +25,32 @@ for pkg_path in "$DOTFILES_DIR"/*/; do
   echo "  - $pkg"
   stow --target="$HOME" --restow "$pkg"
 done
+
+echo "==> Install nvm for node"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.6/install.sh | bash
+
+echo "==> Install rvm for ruby"
+gpg2 --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+curl -sSL https://get.rvm.io | bash -s stable
+
+echo "==> Install claude code"
+curl -fsSL https://claude.ai/install.sh | bash
+
+echo "==> Install caveman for claude"
+curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash
+
+echo "==> Install codegraph for claude"
+curl -fsSL https://raw.githubusercontent.com/colbymchenry/codegraph/main/install.sh | sh
+codegraph install --target=cursor,claude --yes       # explicit target list
+
+echo "==> Install python uv"
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+echo "==> Trusting third-party taps"
+brew trust --tap d12frosted/emacs-plus
+
+echo "==> brew bundle"
+brew bundle --file="$DOTFILES_DIR/Brewfile"
 
 if [[ "$(uname)" == "Darwin" ]]; then
   echo "==> macOS defaults"

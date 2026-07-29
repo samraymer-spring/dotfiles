@@ -1,5 +1,7 @@
+# Needed for deferred load
+https://github.com/romkatv/zsh-defer
 
 # popular fish-like plugins
-mattmc3/zfunctions
-zsh-users/zsh-autosuggestions
-zdharma-continuum/fast-syntax-highlighting kind:defer
+https://github.com/mattmc3/zfunctions
+https://github.com/zsh-users/zsh-autosuggestions
+https://github.com/zdharma-continuum/fast-syntax-highlighting kind:defer

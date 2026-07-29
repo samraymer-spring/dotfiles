@@ -1,0 +1,5 @@
+# Emacs rewrites this via M-x customize
+doom/.config/doom/custom.el
+
+# gh auth tokens — never commit
+gh/.config/gh/hosts.yml

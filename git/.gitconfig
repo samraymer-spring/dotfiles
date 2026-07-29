@@ -1,0 +1,18 @@
+[user]
+	signingkey = 2118DDB302336F42
+	name = Sam Raymer
+	email = sam@sam-raymer.com
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
+[push]
+	autoSetupRemote = true
+[alias]
+	co = checkout
+	f = fetch
+	poh = push origin head
+[pull]
+	rebase = true
+[gpg]
+	program = gpg2

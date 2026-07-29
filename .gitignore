@@ -4,11 +4,15 @@ doom/.config/doom/custom.el
 # gh auth tokens — never commit
 gh/.config/gh/hosts.yml
 
-claude/.claude/tmp/
-claude/.claude/cache/
-claude/.claude/plugins/
-claude/.claude/sessions/
-claude/.claude/backups/
-claude/.claude/projects/
+claude/.claude/*
+!claude/.claude/settings.json
+!claude/.claude/CLAUDE.md
+!claude/.claude/backups/
+# claude/.claude/plugins/
+# claude/.claude/sessions/
+# claude/.claude/backups/
+# claude/.claude/projects/
+# claude/.claude/ide/
+
 # Just in case we're ever on linux:
 claude/.claude/.credentials.json

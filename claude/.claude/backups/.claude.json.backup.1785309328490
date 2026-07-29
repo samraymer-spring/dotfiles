@@ -1,0 +1,40 @@
+{
+  "installMethod": "native",
+  "autoUpdates": false,
+  "firstStartTime": "2026-07-29T06:43:55.303Z",
+  "machineID": "86e36daae9dfae709c1798f3b3c63e528641cb1c3ada275f7ac8c3857f7dde2b",
+  "opusProMigrationComplete": true,
+  "opusProMigrationTimestamp": 1785307435328,
+  "sonnet1m45MigrationComplete": true,
+  "seenNotifications": {},
+  "hasResetAutoModeOptInForDefaultOffer": true,
+  "migrationVersion": 13,
+  "userID": "2ba77dcd1ae3bf3b3c439af4cde5815f072440848874727bf9d6a20199e03db9",
+  "changelogLastFetched": 1785307435403,
+  "oauthAccount": {
+    "accountUuid": "b47585ad-2096-4ed3-b5f3-5288368fa539",
+    "emailAddress": "sam@sam-raymer.com",
+    "organizationUuid": "d24b7dc1-bb56-4f94-9ec3-3eccfd574126",
+    "hasExtraUsageEnabled": false,
+    "billingType": "stripe_subscription",
+    "accountCreatedAt": "2026-03-17T22:47:05.911966Z",
+    "subscriptionCreatedAt": "2026-03-17T22:48:10.211592Z",
+    "ccOnboardingFlags": {},
+    "claudeCodeTrialEndsAt": null,
+    "claudeCodeTrialDurationDays": null,
+    "seatTier": null,
+    "displayName": "Sam",
+    "profileFetchedAt": 1785307435678
+  },
+  "mcpServers": {
+    "codegraph": {
+      "type": "stdio",
+      "command": "codegraph",
+      "args": [
+        "serve",
+        "--mcp"
+      ]
+    }
+  },
+  "autoUpdatesProtectedForNative": true
+}

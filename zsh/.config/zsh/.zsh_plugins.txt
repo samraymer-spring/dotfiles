@@ -5,3 +5,4 @@ https://github.com/romkatv/zsh-defer
 https://github.com/mattmc3/zfunctions
 https://github.com/zsh-users/zsh-autosuggestions
 https://github.com/zdharma-continuum/fast-syntax-highlighting kind:defer
+https://github.com/fdellwing/zsh-bat.git

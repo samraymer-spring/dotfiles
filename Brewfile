@@ -5,6 +5,8 @@ brew "antidote"
 brew "automake"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Bat, is like cat
+brew "bat"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Simple, fast and user-friendly alternative to find

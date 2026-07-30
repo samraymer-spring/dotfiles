@@ -27,7 +27,7 @@
       }
     }
   },
+  "advisorModel": "opus",
   "tui": "fullscreen",
-  "theme": "auto",
-  "advisorModel": "opus"
+  "theme": "auto"
 }

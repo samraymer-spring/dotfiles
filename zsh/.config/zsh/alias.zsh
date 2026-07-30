@@ -6,6 +6,7 @@
 
 alias ls='ls --color'
 alias ll='ls -Al --color'
+alias l='ls -Alt --color'
 alias grep='grep --color'
 alias egrep='egrep --color'
 alias fgrep='fgrep --color'

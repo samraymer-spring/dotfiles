@@ -16,6 +16,7 @@ alias fgrep='fgrep --color'
 ############
 
 alias g='git'
+alias gd='git diff'
 alias gst='git status'
 alias gpsup='git push origin head --set-upstream'
 alias gpoh='git push origin head'

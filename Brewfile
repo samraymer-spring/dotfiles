@@ -1,138 +1,80 @@
-# tap "d12frosted/emacs-plus"
+tap "my-monkeys/tap"
+tap "nikitabobko/tap"
 # Plugin manager for zsh, inspired by antigen and antibody
 brew "antidote"
-# Tool for generating GNU Standards-compliant Makefiles
-# brew "automake"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
-# Bat, is like cat
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Versatile and fast Unicode/ASCII/ANSI graphics renderer
+brew "chafa"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
-brew "chafa"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
-# rew "gh"
+brew "gh"
 # GNU Privacy Guard (OpenPGP)
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
-# brew "go"
-# Language server for the Go language
-# brew "gopls"
-# Sophisticated file transfer program
-# brew "lftp"
-# Generic library support script
-# brew "libtool"
-# Powerful paging program
-# brew "most"
+brew "go"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Ambitious Vim-fork focused on extensibility and agility
-# brew "neovim"
-# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-# brew "nginx"
-# Port scanning utility for large networks
-# brew "nmap"
-# Fast, disk space efficient package manager
-# rew "pnpm"
+brew "neovim"
 # Ruby version manager
 brew "rbenv"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # CLI proxy to minimize LLM token consumption
 brew "rtk"
+# Safe, concurrent, practical language
+brew "rust"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# Terminal multiplexer
+brew "tmux"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # General-purpose lossless data-compression library
 brew "zlib"
-# Automatic tiling window manager similar to xmonad
-# cask "amethyst"
-# Server and cloud storage browser
-# cask "cyberduck"
-# GNU Emacs text editor with patches for macOS
-# cask "d12frosted/emacs-plus/emacs-plus-app"
-# Free and open-source image editor
-# cask "gimp"
-# Java IDE by JetBrains
-# cask "intellij-idea"
-# GPU-based terminal emulator
-# cask "kitty" # phones home, no bueno for privacy
+# Command-line interface for 1Password
+cask "1password-cli"
+# AeroSpace is an i3-like tiling window manager for macOS
+cask "nikitabobko/tap/aerospace", trusted: true
+# GPU-accelerated terminal emulator
 cask "alacritty"
-# Knowledge base that works on top of a local folder of plain text Markdown files
-# cask "obsidian"
-# Replacement for Docker Desktop
-# cask "orbstack"
-# Team communication and collaboration software
-# cask "slack"
-# System monitor for the menu bar
-# cask "stats"
-# JDK from the Eclipse Foundation (Adoptium)
-# cask "temurin"
+# Terminal-based AI coding assistant
+cask "claude-code"
+# macOS dictation with local Whisper/Parakeet transcription
+cask "my-monkeys/tap/opensuperwhisper", trusted: true
+# Open-source code editor
+cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
-cask "visual-studio-code"
-vscode "anthropic.claude-code"
-vscode "bradlc.vscode-tailwindcss"
 vscode "castwide.solargraph"
-vscode "davidanson.vscode-markdownlint"
 vscode "dbaeumer.vscode-eslint"
-vscode "dhruv.maven-dependency-explorer"
-vscode "docker.docker"
-vscode "eamodio.gitlens"
-vscode "embertooling.vscode-ember"
-vscode "esbenp.prettier-vscode"
 vscode "formulahendry.auto-rename-tag"
 vscode "github.codespaces"
-vscode "github.vscode-pull-request-github"
-# vscode "golang.go"
-vscode "graphite.gti-vscode"
-vscode "koichisasada.vscode-rdbg"
-vscode "mathematic.vscode-pdf"
 vscode "max-ss.cyberpunk"
-vscode "mechatroner.rainbow-csv"
-vscode "mindaro-dev.file-downloader"
-vscode "ms-azuretools.vscode-containers"
-vscode "ms-azuretools.vscode-docker"
-vscode "ms-dotnettools.csharp"
-vscode "ms-dotnettools.vscode-dotnet-runtime"
-vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
 vscode "ms-playwright.playwright"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "ms-python.vscode-python-envs"
-vscode "ms-toolsai.jupyter"
-vscode "ms-toolsai.jupyter-keymap"
-vscode "ms-toolsai.jupyter-renderers"
-vscode "ms-toolsai.vscode-jupyter-cell-tags"
-vscode "ms-toolsai.vscode-jupyter-slideshow"
-vscode "ms-vscode-remote.remote-containers"
-vscode "ms-vscode-remote.remote-ssh"
-vscode "ms-vscode-remote.remote-ssh-edit"
-vscode "ms-vscode-remote.remote-wsl"
-vscode "ms-vscode-remote.vscode-remote-extensionpack"
-vscode "ms-vscode.makefile-tools"
-vscode "ms-vscode.remote-explorer"
-vscode "ms-vscode.remote-server"
-vscode "ms-vscode.vscode-speech"
 vscode "ms-vsliveshare.vsliveshare"
-vscode "nrwl.angular-console"
 vscode "orta.vscode-jest"
-vscode "ravioshankar.scala-gurus"
-vscode "redhat.vscode-yaml"
 vscode "rvest.vs-code-prettier-eslint"
-vscode "scala-lang.scala"
-vscode "scala-lang.scala-snippets"
-vscode "scalameta.metals"
 vscode "shopify.ruby-extensions-pack"
 vscode "shopify.ruby-lsp"
 vscode "sorbet.sorbet-vscode-extension"
-vscode "streetsidesoftware.code-spell-checker"
-vscode "timonwong.shellcheck"
-vscode "vscode-icons-team.vscode-icons"
+vscode "tamasfe.even-better-toml"
 vscode "vscodevim.vim"
-vscode "wmaurer.change-case"
-vscode "yzhang.markdown-all-in-one"
-# go "github.com/golangci/golangci-lint/cmd/golangci-lint"
+go "github.com/golangci/golangci-lint/cmd/golangci-lint"
 uv "claude-monitor"
+uv "headroom-ai[proxy]"
+npm "@colbymchenry/codegraph"
+npm "corepack"
+npm "lavish-axi"

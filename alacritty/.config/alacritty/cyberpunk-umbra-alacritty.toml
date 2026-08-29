@@ -1,0 +1,77 @@
+# Cyberpunk Umbra — Alacritty colors
+# Derived from cyberpunk-umbra-color-theme.json (VS Code theme)
+# Paste this into your alacritty.toml, or import it:
+#   [general]
+#   import = ["~/.config/alacritty/cyberpunk-umbra-alacritty.toml"]
+
+[colors.primary]
+background = "#100d23"
+foreground = "#00ff9c"
+dim_foreground = "#009550"
+bright_foreground = "#ffffff"
+
+[colors.cursor]
+text = "#100d23"
+cursor = "#00ff6a"
+
+[colors.vi_mode_cursor]
+text = "#100d23"
+cursor = "#9dff00"
+
+[colors.selection]
+text = "#eeffff"
+background = "#311b92"
+
+[colors.search.matches]
+foreground = "#100d23"
+background = "#00c3ff"
+
+[colors.search.focused_match]
+foreground = "#100d23"
+background = "#ff4081"
+
+[colors.hints.start]
+foreground = "#100d23"
+background = "#fffc58"
+
+[colors.hints.end]
+foreground = "#100d23"
+background = "#00ff9c"
+
+[colors.footer_bar]
+background = "#1e1d45"
+foreground = "#00ff9c"
+
+[colors.line_indicator]
+foreground = "None"
+background = "None"
+
+[colors.normal]
+black   = "#1e1d45"
+red     = "#ff004c"
+green   = "#00ff6a"
+yellow  = "#fffc58"
+blue    = "#3d5afe"
+magenta = "#d57bff"
+cyan    = "#00c3ff"
+white   = "#eeffff"
+
+[colors.bright]
+black   = "#6766b3"
+red     = "#ff1865"
+green   = "#00ff9c"
+yellow  = "#ffff00"
+blue    = "#6095ff"
+magenta = "#ee6dff"
+cyan    = "#00ffc8"
+white   = "#ffffff"
+
+[colors.dim]
+black   = "#0b0a19"
+red     = "#a22929"
+green   = "#009550"
+yellow  = "#8a8a2e"
+blue    = "#26506d"
+magenta = "#6a3ecf"
+cyan    = "#1a7a99"
+white   = "#7877b3"

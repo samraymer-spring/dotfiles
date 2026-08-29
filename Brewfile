@@ -1,40 +1,41 @@
-tap "d12frosted/emacs-plus"
+# tap "d12frosted/emacs-plus"
 # Plugin manager for zsh, inspired by antigen and antibody
 brew "antidote"
 # Tool for generating GNU Standards-compliant Makefiles
-brew "automake"
+# brew "automake"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Bat, is like cat
 brew "bat"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+brew "chafa"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
-brew "gh"
+# rew "gh"
 # GNU Privacy Guard (OpenPGP)
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
-brew "go"
+# brew "go"
 # Language server for the Go language
-brew "gopls"
+# brew "gopls"
 # Sophisticated file transfer program
-brew "lftp"
+# brew "lftp"
 # Generic library support script
-brew "libtool"
+# brew "libtool"
 # Powerful paging program
-brew "most"
+# brew "most"
 # Ambitious Vim-fork focused on extensibility and agility
-brew "neovim"
+# brew "neovim"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx"
+# brew "nginx"
 # Port scanning utility for large networks
-brew "nmap"
+# brew "nmap"
 # Fast, disk space efficient package manager
-brew "pnpm"
+# rew "pnpm"
 # Ruby version manager
 brew "rbenv"
 # Search tool like grep and The Silver Searcher
@@ -46,29 +47,31 @@ brew "stow"
 # General-purpose lossless data-compression library
 brew "zlib"
 # Automatic tiling window manager similar to xmonad
-cask "amethyst"
+# cask "amethyst"
 # Server and cloud storage browser
-cask "cyberduck"
+# cask "cyberduck"
 # GNU Emacs text editor with patches for macOS
-cask "d12frosted/emacs-plus/emacs-plus-app"
+# cask "d12frosted/emacs-plus/emacs-plus-app"
 # Free and open-source image editor
-cask "gimp"
+# cask "gimp"
 # Java IDE by JetBrains
-cask "intellij-idea"
+# cask "intellij-idea"
 # GPU-based terminal emulator
-cask "kitty"
+# cask "kitty" # phones home, no bueno for privacy
+cask "alacritty"
 # Knowledge base that works on top of a local folder of plain text Markdown files
-cask "obsidian"
+# cask "obsidian"
 # Replacement for Docker Desktop
-cask "orbstack"
+# cask "orbstack"
 # Team communication and collaboration software
-cask "slack"
+# cask "slack"
 # System monitor for the menu bar
-cask "stats"
+# cask "stats"
 # JDK from the Eclipse Foundation (Adoptium)
-cask "temurin"
+# cask "temurin"
 # Multimedia player
 cask "vlc"
+cask "visual-studio-code"
 vscode "anthropic.claude-code"
 vscode "bradlc.vscode-tailwindcss"
 vscode "castwide.solargraph"
@@ -82,7 +85,7 @@ vscode "esbenp.prettier-vscode"
 vscode "formulahendry.auto-rename-tag"
 vscode "github.codespaces"
 vscode "github.vscode-pull-request-github"
-vscode "golang.go"
+# vscode "golang.go"
 vscode "graphite.gti-vscode"
 vscode "koichisasada.vscode-rdbg"
 vscode "mathematic.vscode-pdf"
@@ -131,5 +134,5 @@ vscode "vscode-icons-team.vscode-icons"
 vscode "vscodevim.vim"
 vscode "wmaurer.change-case"
 vscode "yzhang.markdown-all-in-one"
-go "github.com/golangci/golangci-lint/cmd/golangci-lint"
+# go "github.com/golangci/golangci-lint/cmd/golangci-lint"
 uv "claude-monitor"

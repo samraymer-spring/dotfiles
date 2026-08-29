@@ -22,7 +22,7 @@ zstyle ':vcs_info:git:*' formats ' %F{2}(%F{1}%b%u%c%F{2})%f'
 # vcs info during git action
 zstyle ':vcs_info:git:*' actionformats ' %F{2}(%F{1}%b|%a%u%c%F{2})%f'
 
-tarot_file=$(find ~/dotfiles/assets/Cards/**/*.png -maxdepth 1 | shuf | head -n 1)
-icat "$tarot_file"
+# tarot_file=$(find ~/dotfiles/assets/Cards/**/*.png -maxdepth 1 | shuf | head -n 1)
+# chafa "$tarot_file" --fill all
 
 PROMPT='%n@%m %1~${vcs_info_msg_0_} λ '

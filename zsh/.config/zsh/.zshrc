@@ -3,6 +3,7 @@
 # Source additional config files e.g. alias.zsh
 source ${ZDOTDIR}/alias.zsh
 source ${ZDOTDIR}/prompt.zsh
+source ${ZDOTDIR}/env.zsh
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"

@@ -1,0 +1,6 @@
+[general]
+import = ["~/.config/alacritty/cyberpunk-umbra-alacritty.toml"]
+
+[window]
+option_as_alt = "Both"
+opacity=0.95

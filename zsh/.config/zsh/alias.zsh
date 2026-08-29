@@ -38,3 +38,9 @@ function gco() {
 ########
 
 alias icat="kitty +kitten icat --align=left"
+
+######
+# nvim
+#####
+alias vi=nvim
+alias vim=nvim

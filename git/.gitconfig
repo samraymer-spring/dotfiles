@@ -1,11 +1,11 @@
 [user]
 	signingkey = 2118DDB302336F42
 	name = Sam Raymer
-	email = sam@sam-raymer.com
+	email = sam.raymer@springhealth.com
 [commit]
-	gpgsign = true
+	#gpgsign = true
 [tag]
-	gpgSign = true
+	#gpgSign = true
 [push]
 	autoSetupRemote = true
 [alias]
@@ -15,4 +15,4 @@
 [pull]
 	rebase = true
 [gpg]
-	program = gpg2
+	program = gpg

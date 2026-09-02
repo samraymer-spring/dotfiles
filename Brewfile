@@ -48,31 +48,6 @@ cask "nikitabobko/tap/aerospace", trusted: true
 cask "alacritty"
 # Terminal-based AI coding assistant
 cask "claude-code"
-# macOS dictation with local Whisper/Parakeet transcription
-cask "my-monkeys/tap/opensuperwhisper", trusted: true
-# Open-source code editor
-cask "visual-studio-code"
-# Multimedia player
-cask "vlc"
-vscode "castwide.solargraph"
-vscode "dbaeumer.vscode-eslint"
-vscode "formulahendry.auto-rename-tag"
-vscode "github.codespaces"
-vscode "max-ss.cyberpunk"
-vscode "ms-playwright.playwright"
-vscode "ms-python.debugpy"
-vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
-vscode "ms-python.vscode-python-envs"
-vscode "ms-vsliveshare.vsliveshare"
-vscode "orta.vscode-jest"
-vscode "rvest.vs-code-prettier-eslint"
-vscode "shopify.ruby-extensions-pack"
-vscode "shopify.ruby-lsp"
-vscode "sorbet.sorbet-vscode-extension"
-vscode "tamasfe.even-better-toml"
-vscode "vscodevim.vim"
-go "github.com/golangci/golangci-lint/cmd/golangci-lint"
 uv "claude-monitor"
 uv "headroom-ai[proxy]"
 npm "@colbymchenry/codegraph"

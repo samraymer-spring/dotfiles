@@ -22,6 +22,7 @@ echo "==> Stowing packages"
 for pkg_path in "$DOTFILES_DIR"/*/; do
   pkg="$(basename "$pkg_path")"
   [[ "$pkg" == ".git" ]] && continue
+  [[ "$pkg" == "git" && -n $GITHUB_CODESPACE_TOKEN ]] && continue
   echo "  - $pkg"
   stow --target="$HOME" --restow "$pkg"
 done
@@ -54,7 +55,8 @@ brew bundle --file="$DOTFILES_DIR/Brewfile"
 
 if [[ "$(uname)" == "Darwin" ]]; then
   echo "==> macOS defaults"
-  "$DOTFILES_DIR/macos.sh"
+  cd "$DOTFILES_DIR/osx"
+  source "./macos.sh"
 fi
 
 echo "==> Done"

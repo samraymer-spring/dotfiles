@@ -44,3 +44,12 @@ alias icat="kitty +kitten icat --align=left"
 #####
 alias vi=nvim
 alias vim=nvim
+
+########
+# Claude
+########
+
+# disable mouse tracking
+alias unmouse='printf "\e[?1000l\e[?1003l\e[?1006l"'
+alias claude='command claude; unmouse'
+

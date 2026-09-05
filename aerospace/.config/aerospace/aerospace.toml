@@ -30,8 +30,7 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 # You can effectively turn off macOS "Hide application" (cmd-h) feature by toggling this flag
 # Useful if you don't use this macOS feature, but accidentally hit cmd-h or cmd-alt-h key
 # Also see: https://nikitabobko.github.io/AeroSpace/goodies#disable-hide-app
-automatically-unhide-macos-hidden-apps = false
-
+automatically-unhide-macos-hidden-apps = true
 
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
 # Possible values:
@@ -41,12 +40,12 @@ automatically-unhide-macos-hidden-apps = false
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
-gaps.inner.horizontal = 0
-gaps.inner.vertical =   0
-gaps.outer.left =       0
-gaps.outer.bottom =     0
-gaps.outer.top =        0
-gaps.outer.right =      0
+gaps.inner.horizontal = 8
+gaps.inner.vertical =   8
+gaps.outer.left =       8
+gaps.outer.bottom =     8
+gaps.outer.top =        8
+gaps.outer.right =      8
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes

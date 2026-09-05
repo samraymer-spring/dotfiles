@@ -6,7 +6,7 @@
 
 [colors.primary]
 background = "#100d23"
-foreground = "#00ff9c"
+foreground = "#bcebd8"
 dim_foreground = "#009550"
 bright_foreground = "#ffffff"
 
